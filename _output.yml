@@ -1,0 +1,13 @@
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+    before_body: abstract.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  template: null
+  pandoc_args: --top-level-division=chapter
+  toc_depth: 3
+  toc_unnumbered: no
+  toc_appendix: yes
+  keep_tex: true
+bookdown::epub_book: default

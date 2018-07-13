@@ -1,0 +1,37 @@
+--- 
+title: "A study on the intake of coffee and the output of research studies"
+author: "Charles Dickens"
+date: "June 2018"
+site: bookdown::bookdown_site
+output:
+  bookdown::pdf_book
+documentclass: ubcthesis
+classoption: oneside
+bibliography: thesis.bib
+biblio-style: apalike
+link-citations: yes
+description: "This is my PhD thesis"
+---
+
+# List of Abbreviations
+
+```{r abbreviations, eval=T, echo=F}
+abbreviations <- read.table('abbreviations.tsv',sep='\t',comment='')
+
+knitr::kable(abbreviations,
+  booktabs = TRUE, escape=FALSE,
+  longtable=TRUE,
+  col.names = c('Short','Long')
+  )
+```
+
+
+# Acknowledgements
+
+I would like to thank Stack Overflow for everything.
+
+# Dedication
+
+To Stack Overflow.
+
+\mainmatter

@@ -1,0 +1,28 @@
+# First Chapter of Research
+
+Here is a research chapter. Look a graph in Figure \@ref(fig:myfigure).
+
+```{r libraries, include=FALSE}
+library(knitr)
+library(dplyr)
+library(lattice)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r myfigure, echo=F, eval=T, fig.width=9, fig.asp=1.0,  fig.cap='(ref:myfigure)'}
+data <- data.frame(x=runif(10),y=runif(10))
+xyplot(y~x, data, cex=2)
+```
+
+(ref:myfigure) Here is a figure caption.
+
+Also check out the associated data in Table \@ref(tab:mytable).
+
+```{r mytable, echo=F, eval=T}
+knitr::kable(data, 
+             booktabs = TRUE, escape=FALSE,
+             caption = 'The randomly generated data used for this research.'
+             )
+```
+
