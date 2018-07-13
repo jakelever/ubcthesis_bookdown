@@ -14,15 +14,16 @@ Basically you need RStudio so it's not painful. You will need up-to-date version
 
 Fill in the following and before you know it, you'll have a finished thesis.
 
-- **Title & author**: These need to be updated in the index.Rmd and abstract.tex files.
-- **Committee**: The examining and additional committee info should be put into the abstract.tex file
-- **Abstract, lab summary & preface**: Also go into the abstract.text file
-- **Acknowledgements & Dedication**: Go into the index.Rmd file
-- **Abbreviations**: Edit the tab-delimited abbreviations.tsv file (which is loaded in index.Rmd and rendered using knitr kable)
-- **Bibliography**: Goes into the thesis.bib file (in BibTex format)
+- **Title & author**: These need to be updated in the [index.Rmd](https://github.com/jakelever/ubcthesis_bookdown/blob/master/index.Rmd) and [abstract.tex](https://github.com/jakelever/ubcthesis_bookdown/blob/master/abstract.tex) files.
+- **Committee**: The examining and additional committee info should be put into the [abstract.tex](https://github.com/jakelever/ubcthesis_bookdown/blob/master/abstract.tex) file
+- **Abstract, lab summary & preface**: Also go into the [abstract.tex](https://github.com/jakelever/ubcthesis_bookdown/blob/master/abstract.tex) file
+- **Acknowledgements & Dedication**: Go into the [index.Rmd](https://github.com/jakelever/ubcthesis_bookdown/blob/master/index.Rmd) file
+- **Abbreviations**: Edit the tab-delimited abbreviations.tsv file (which is loaded in [index.Rmd](https://github.com/jakelever/ubcthesis_bookdown/blob/master/index.Rmd) and rendered using knitr kable)
+- **Bibliography**: Goes into the [thesis.bib](https://github.com/jakelever/ubcthesis_bookdown/blob/master/thesis.bib) file (in BibTex format)
+- **Previous Degree**: Goes in the [preamble.tex](https://github.com/jakelever/ubcthesis_bookdown/blob/master/preamble.tex) file
 - **New Chaptors**: Create new .Rmd files using the same numbering as the existing 01-, 02-, etc format. Reorder as necessary and the numbering will be managed automatically.
 
-An example of a figure and table with captions are shown in 02-research.Rmd. These are then indexed automatically in the list of figures and tables. References are down using the square brackets format (e.g. [@meyer2003pressures])
+An example of a figure and table with captions are shown in [02-research.Rmd](https://github.com/jakelever/ubcthesis_bookdown/blob/master/02-research.Rmd). These are then indexed automatically in the list of figures and tables. References are down using the square brackets format (e.g. [@meyer2003pressures])
 
 ## Building it.
 
