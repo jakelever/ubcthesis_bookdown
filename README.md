@@ -39,3 +39,7 @@ bookdown::render_book("index.Rmd", "bookdown::word_document2")
 ```
 
 Note that the Word file will not match the appropriate formatting and will be missing the title page, abstract, lay summary and preface (things before the Table of Contents). So you'd need to add them in manually. But it may still be useful to enable easy editing by supervisors & collaborators.
+
+## Issues
+
+If you encounter any problems, please [file an issue](https://github.com/jakelever/ubcthesis_bookdown/issues) along with a detailed description.
