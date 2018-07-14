@@ -41,6 +41,26 @@ bookdown::render_book("index.Rmd", "bookdown::word_document2")
 
 Note that the Word file will not match the appropriate formatting and will be missing the title page, abstract, lay summary and preface (things before the Table of Contents). So you'd need to add them in manually. But it may still be useful to enable easy editing by supervisors & collaborators.
 
+## Citation Files per Chapter
+
+If you want to have a citation file for each chapter (e.g. 01-intro.bib, etc), you can include the code below to merge them into one bib file (and remove duplicates). This can be useful if your chapters are already Markdown or Latex based papers. Add this code to the index.Rmd file (in an R block) and change the bib file (in the header bit of that file) to thesis.bib.
+
+````
+```{r bibliographyMerge, eval=T, echo=F}
+library(dplyr)
+library(kableExtra)
+library(RefManageR)
+BibOptions(check.entries=F)
+bibfiles <- list.files(pattern = "\\.bib$")
+bibfiles <- grep("thesis.bib",bibfiles,invert=T,value=T)
+bib <- ReadBib(bibfiles[1])
+for(bibfile in bibfiles[2:length(bibfiles)])
+  bib <- suppressWarnings(suppressMessages(merge(bib,ReadBib(bibfile))))
+
+suppressWarnings(suppressMessages(WriteBib(bib, file='thesis.bib',check=F)))
+```
+````
+
 ## Issues
 
 If you encounter any problems, please [file an issue](https://github.com/jakelever/ubcthesis_bookdown/issues) along with a detailed description.
