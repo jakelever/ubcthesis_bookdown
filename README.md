@@ -16,7 +16,7 @@ Fill in the following and before you know it, you'll have a finished thesis.
 
 - **Title & author**: These need to be updated in the [index.Rmd](https://github.com/jakelever/ubcthesis_bookdown/blob/master/index.Rmd) and [abstract.tex](https://github.com/jakelever/ubcthesis_bookdown/blob/master/abstract.tex) files.
 - **Committee**: The examining and additional committee info should be put into the [abstract.tex](https://github.com/jakelever/ubcthesis_bookdown/blob/master/abstract.tex) file
-- **Abstract, lab summary & preface**: Also go into the [abstract.tex](https://github.com/jakelever/ubcthesis_bookdown/blob/master/abstract.tex) file
+- **Abstract, lay summary & preface**: Also go into the [abstract.tex](https://github.com/jakelever/ubcthesis_bookdown/blob/master/abstract.tex) file
 - **Acknowledgements & Dedication**: Go into the [index.Rmd](https://github.com/jakelever/ubcthesis_bookdown/blob/master/index.Rmd) file
 - **Abbreviations**: Edit the tab-delimited abbreviations.tsv file (which is loaded in [index.Rmd](https://github.com/jakelever/ubcthesis_bookdown/blob/master/index.Rmd) and rendered using knitr kable)
 - **Bibliography**: Goes into the [thesis.bib](https://github.com/jakelever/ubcthesis_bookdown/blob/master/thesis.bib) file (in BibTex format)
