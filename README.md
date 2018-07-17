@@ -23,7 +23,7 @@ Fill in the following and before you know it, you'll have a finished thesis.
 - **Previous Degree**: Goes in the [preamble.tex](https://github.com/jakelever/ubcthesis_bookdown/blob/master/preamble.tex) file
 - **New Chaptors**: Create new .Rmd files using the same numbering as the existing 01-, 02-, etc format. Reorder as necessary and the numbering will be managed automatically.
 
-An example of a figure and table with captions are shown in [02-research.Rmd](https://github.com/jakelever/ubcthesis_bookdown/blob/master/02-research.Rmd). These are then indexed automatically in the list of figures and tables. References are down using the square brackets format (e.g. [@meyer2003pressures])
+An example of a figure and table with captions are shown in [02-research.Rmd](https://github.com/jakelever/ubcthesis_bookdown/blob/master/02-research.Rmd). These are then indexed automatically in the list of figures and tables. References are done using the square brackets format (e.g. [@meyer2003pressures])
 
 ## Building it.
 
