@@ -41,7 +41,11 @@ bookdown::render_book("index.Rmd", "bookdown::word_document2")
 
 Note that the Word file will not match the appropriate formatting and will be missing the title page, abstract, lay summary and preface (things before the Table of Contents). So you'd need to add them in manually. But it may still be useful to enable easy editing by supervisors & collaborators.
 
-## Citation Files per Chapter
+## Adapting for Another University
+
+The general format is probably mostly valid for theses at other universities. The quick changes are the institution name and location in [genthesis.cls](https://github.com/jakelever/ubcthesis_bookdown/blob/master/genthesis.cls). Do a find & replace for "University of British Columbia" and "Vancouver". You'd also likely need to change some of the text of the main page to comply with what's expected at your university. That is also in [genthesis.cls](https://github.com/jakelever/ubcthesis_bookdown/blob/master/genthesis.cls). 
+
+## Bibliography Files per Chapter
 
 If you want to have a citation file for each chapter (e.g. 01-intro.bib, etc), you can include the code below to merge them into one bib file (and remove duplicates). This can be useful if your chapters are already Markdown or Latex based papers. Add this code to the index.Rmd file (in an R block) and change the bib file (in the header bit of that file) to thesis.bib.
 
